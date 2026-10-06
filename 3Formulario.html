@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario</title>
+  <meta charset="utf-8"/>
+  
+ 
+</head>
+  <body>
+    <h1> Formulario </h1>
+    <form method="post">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+       <p>
+        <label for="nome">Nome:</label>
+        <input type="text" minlength="3" id="nome"/>
+      </p>
+        <p>
+          <label for="cpf">cpf:</label>
+          <input type="text" required pattern="[0-9]{11}" id="cpf"/>
+       </p>
+
+        <p>
+          
+        <label for="data-de-nascimento">Data de nascimento:</label>
+        <input type="date" required id="data-de-nascimento"/>
+          
+        </p>
+        <p>
+          <label for="tel" >Telefone:</label>
+          <label for="Pais">Pais</label>
+          <select id="Pais"/>
+            <option value=""></option>           
+    <option value="55" selected>Brasil (+55)</option>
+    <option value="1">Estados Unidos (+1)</option>
+    <option value="1">Canadá (+1)</option
+    <option value="44">Reino Unido (+44)</option>
+    <option value="351">Portugal (+351)</option>
+    <option value="34">Espanha (+34)</option>
+    <option value="33">França (+33)</option>
+    <option value="39">Itália (+39)</option>
+    <option value="49">Alemanha (+49)</option>
+    <option value="54">Argentina (+54)</option>
+    <option value="598">Uruguai (+598)</option>
+    <option value="56">Chile (+56)</option>
+    <option value="57">Colômbia (+57)</option>
+    <option value="51">Peru (+51)</option>
+    <option value="52">México (+52)</option>
+    <option value="81">Japão (+81)</option>
+    <option value="86">China (+86)</option>
+    <option value="61">Austrália (+61)</option>
+    <option value="41">Suíça (+41)</option>
+    <option value="353">Irlanda (+353)</option>
+    <option value="244">Angola (+244)</option>
+    <option value="258">Moçambique (+258)</option>
+    <option value="971">Emirados Árabes Unidos (+971)</option>
+</select>
+
+          <input type="tel" required pattern="[0-9]{11}" id="tel"/>
+        </p>
+
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo"/>
+          <option value="">Masculino</option>
+          <option value="">Feminino</option>
+          <option value="">Outros</option>
+       
+        </select>
+          
+       <p>
+         <label fot="Email">Email:</label>
+         <input type="email" required id="Email"/>
+       </p>
+        
+     </fieldset>
+      <fieldset>
+        <legend>Endereço</legend>
+      <p>
+        
+        <label for="Endereço">Endereço:</label>
+        <label for="tipo">Tipo:</label>
+        <select id="tipo"/>
+          <option value="">Rua</option>
+          <option value="">Via</option>
+          <option value="">Estrada</option>
+          <option value="">Avenida</option>
+          <option value="">Alameda</option>
+        </select>
+        
+
+        
+        <input type="text" id="Endereço" size="30"/>
+
+        <label for="numero">Numero:</label>
+        <input type="number" id="numero" style="width:30px;"/>
+
+                                                                  
+
+        
+      </p>
+          
+      <p>
+          
+         <label for="cidade">cidade:</label>
+         <input type="text" id="cidade"/>
+
+          <label for="uf">UF:</label>
+          <select id="uf" name="uf"/>
+            
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>      
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+               
+          </select>
+
+
+          
+      </p>
+      
+          
+      <label for="CEP">CEP:</label>
+        <input type="text" id="CEP" name="CEP" />
+
+        
+      </fieldset>
+
+      <fieldset>
+
+        <legend>Fale sobre voçê </legend>
+        
+        <label for="Comentario">Comentario:</label>
+        <textarea id="Comentario"  name="Comentario" rows="10" cols="50" maxlength="300"></textarea>
+
+
+        
+      </fieldset>
+
+      <fieldset>
+        <button type="submit">Enviar Formulario</button>
+        <button type="reset">Limpar Formulario</button>
+      </fieldset>
+    </form>
+    
+    
+  </body>
+
+
+
+  
+</html>
